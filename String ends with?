@@ -1,0 +1,13 @@
+function solution(str, ending){
+  let i = ending.length;
+  let j = str.length;
+ 
+  while (i >= 0) {
+    if (ending[i] !== str[j]) return false;
+ 
+    i--;
+    j--;
+  }
+ 
+  return true;
+}
